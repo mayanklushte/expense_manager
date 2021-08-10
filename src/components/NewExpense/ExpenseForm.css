@@ -24,3 +24,13 @@
 .new-expense__actions {
   text-align: right;
 }
+
+.new-expense__control.invalid input{
+  border-color: red;
+  background-color: rgb(226, 191, 187);
+}
+
+
+.new-expense__control.invalid label{
+  color: red;
+}
