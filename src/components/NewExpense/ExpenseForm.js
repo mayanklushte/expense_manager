@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Button from '../UI/Button';
 
 import './ExpenseForm.css';
 
@@ -7,7 +8,6 @@ const ExpenseForm = (props) => {
   const [enteredAmount, setEnteredAmount] = useState('');
   const [enteredDate, setEnteredDate] = useState('');
   const [isValid, setIsValid] = useState(true);
-
 
   // const [userInput, setUserInput] = useState({
   //   enteredTitle: '',
@@ -112,9 +112,10 @@ const ExpenseForm = (props) => {
         </div>
       </div>
       <div className='new-expense__actions'>
-        <button type='button' onClick={props.onCancel}>Cancel</button>
-        <button type='submit'>Add Expense</button>
+        <Button type='button' onClick={props.onCancel}>Cancel</Button>
+        <Button type='submit'>Add Expense</Button>
       </div>
+      
     </form>
   );
 };
